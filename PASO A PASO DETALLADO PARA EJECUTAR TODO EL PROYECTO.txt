@@ -1,0 +1,68 @@
+PASO A PASO DETALLADO PARA EJECUTAR TODO EL PROYECTO
+🔹 A. Desarrollo del ecosistema (Web + Token)
+Paso 1: Crear con IA como Lovable.dev (recomendado para la web)
+Crea tu cuenta en lovable.dev
+
+Genera un proyecto nuevo (elige Web App)
+
+Pega el prompt actualizado
+
+Solicita: sitio web + branding + whitepaper + contrato
+
+Exporta el proyecto a GitHub o local
+
+Paso 2: Usa Windsurf o Bolt.new (opcional para edición avanzada)
+Si trabajas con código personalizado:
+
+Clona el repo en Windsurf (o usa Visual Studio Code)
+
+Instala dependencias (npm install)
+
+Ajusta frontend, conecta Web3, diseña branding
+
+Paso 3: Compila y prueba el contrato
+Usa Remix IDE o Hardhat
+
+Conecta tu wallet (Metamask)
+
+Asegúrate de estar en testnet (Goerli, Sepolia)
+
+Prueba: mint, burn, pause, transferTax, transfer
+
+🔹 B. Antes de desplegar en mainnet
+Debes tener:
+✅ Cuenta Metamask con red Ethereum o BNB Chain
+
+✅ ETH o BNB para gas (en testnet y mainnet)
+
+✅ Verificar el contrato en Etherscan (u otro explorador)
+
+✅ Web final subida a Vercel, Netlify o similar
+
+🔹 C. Despliegue final
+Desplega el contrato en mainnet (Ethereum, BNB Chain o Polygon)
+
+Guarda la dirección del contrato
+
+Verifica en Etherscan (opción "Verify & Publish")
+
+Agrega liquidez en Uniswap (crea pool con WETH/SWH)
+
+Crea cuenta en plataformas de seguimiento:
+
+Dextools.io
+
+Dexscreener.com
+
+CoinMarketCap (requiere solicitud y liquidez)
+
+CoinGecko
+
+🔹 D. Requisitos clave a tener
+Necesitas	Descripción
+🧑‍💻 Cuenta Metamask	Para firmar contratos y desplegar
+💸 ETH/BNB/MATIC	Para pagar gas al crear contrato
+📦 Plataforma de desarrollo	Lovable.dev / Windsurf / VSC
+🧾 Whitepaper PDF / HTML	Para publicar en la web y redes
+🌐 Dominio y hosting	(opcional) para mayor credibilidad
+📢 Twitter, Discord, GitHub	Para comunidad y marketing

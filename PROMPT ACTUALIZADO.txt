@@ -1,0 +1,40 @@
+Genera un ecosistema completo para el token ERC-20 "SatoshiWasHere" ($SWH). El objetivo es crear una criptomoneda con un aura misteriosa en honor a Satoshi Nakamoto. El proyecto debe incluir:
+
+🔶 Nombre: SatoshiWasHere  
+🔶 Símbolo: SWH  
+🔶 Suministro inicial: 210,000 tokens  
+🔶 Decimales: 18  
+🔶 Blockchain: Ethereum o compatible con EVM
+
+🔧 Funcionalidades del token:
+- Mint / Burn
+- Burn automático del 2% en cada transferencia
+- Pausar y reactivar el contrato
+- TransferTax modificable (máximo 10%)
+- Propietario único (propiedad del contrato)
+- Preparado para cotizar en Uniswap y otras DEX
+- Contrato compatible con exploradores como Etherscan
+
+🎨 Estética y branding:
+- Tema misterioso tipo hacker/cripto-anónimo
+- Logo monocromático estilo pixel con firma digital
+- Web minimalista con frases ocultas al hacer hover
+- Tipografía estilo máquina de escribir
+
+🌐 Ecosistema a generar:
+1. Contrato con funciones completas (ERC-20)
+2. Sitio web con:
+   - Info del token
+   - Visualizador de holders / transacciones
+   - "Muro de firmas" donde holders pueden dejar frases
+3. Whitepaper interactivo
+4. Roadmap en formato visual
+5. Interfaz para visualizar tokens quemados como "mensajes ocultos"
+6. Comunidad (Discord / Twitter simulada)
+7. Opcional: colección NFT con 21 frases misteriosas
+
+💰 Monetización:
+- Venta por whitelist o preventa
+- NFTs coleccionables
+- Acceso premium a holders (web oculta, merch, arte)
+

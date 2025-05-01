@@ -1,0 +1,168 @@
+🧩 Fase 1 – Planificación general del proyecto
+Concepto	Qué implica	¿Es gratis?	¿Dónde hacerlo?
+Wallet Web3	Crear una billetera cripto para manejar fondos y firmar contratos.	✅ Gratis	https://metamask.io
+IDE de desarrollo	Donde programarás o desplegarás el contrato (Remix, Hardhat, etc.).	✅ Gratis	Remix IDE, Visual Studio Code
+Proyecto Web (branding)	Crear el sitio web, branding y whitepaper.	✅ Gratis en IA como Lovable.dev
+💲Pago si usas diseñadores, hosting profesional	https://lovable.dev, Vercel, Netlify
+Cuenta GitHub	Para guardar y versionar tu proyecto.	✅ Gratis	https://github.com
+
+⚒️ Fase 2 – Desarrollo del contrato y pruebas
+✅ Paso 1 – Crear tu wallet
+Ve a https://metamask.io
+
+Instala la extensión o app.
+
+Guarda tu frase semilla en un lugar seguro.
+
+Se te asignará una dirección (por ej: 0x1234...abcd)
+
+🔐 IMPORTANTE: esta será la cuenta que será la dueña del contrato y tokens.
+💸 Necesitarás fondos (ETH, BNB o MATIC) en esta wallet para desplegar.
+
+✅ Paso 2 – Escribir o importar el contrato
+Entra a https://remix.ethereum.org
+
+Crea un nuevo archivo .sol y pega el contrato que te di.
+
+Instala los imports de OpenZeppelin si es necesario.
+
+Selecciona la versión de compilador (0.8.20)
+
+💡 ¿Cuesta compilar en Remix?
+✅ No. Compilar y probar en Remix es 100% gratis.
+
+✅ Paso 3 – Probar en red de testeo (testnet)
+Cambia en Remix la red a "Injected Web3" y conéctate con Metamask.
+
+Asegúrate de estar en una testnet:
+
+Goerli (ETH)
+
+Sepolia (ETH)
+
+Mumbai (Polygon)
+
+BNB Testnet
+
+Ve a un faucet para obtener tokens de prueba (gratis):
+
+Red	Faucet	Requiere GitHub
+Goerli	https://goerlifaucet.com	✅ Sí
+Sepolia	https://sepoliafaucet.com	✅ Sí
+Mumbai	https://mumbaifaucet.com	❌ No
+BNB	https://testnet.binance.org/faucet-smart	❌ No
+
+Una vez tengas tokens de testnet, puedes:
+
+Desplegar el contrato en testnet
+
+Probar mint, burn, transferencias
+
+💸 Costo de testnet: ✅ Gratis
+⚠️ NO tienen valor real los tokens de testnet
+
+🚀 Fase 3 – Despliegue en mainnet (producción)
+Aquí es donde se incurre en costos reales:
+
+✅ Paso 1 – Elegir la red principal
+Red	Gas aprox. para desplegar	Token de gas	Velocidad	Costo actual estimado
+Ethereum	$40–100 USD	ETH	Lenta	💰 Alta
+BNB Chain	$0.20–$2 USD	BNB	Rápida	✅ Baja
+Polygon	$0.05–$0.50 USD	MATIC	Rápida	✅ Muy baja
+
+🔁 Sugerencia: Para empezar, usa BNB Chain o Polygon por sus bajos costos.
+
+✅ Paso 2 – Comprar tokens de gas
+Abre un exchange como:
+
+https://binance.com
+
+https://coinbase.com
+
+https://okx.com
+
+Compra el token necesario:
+
+ETH para Ethereum
+
+BNB para BNB Chain
+
+MATIC para Polygon
+
+Transfiere esos tokens a tu wallet Metamask
+
+💰 ¿Cuánto necesito para desplegar el contrato?
+
+Ethereum: $60–150 USD
+
+BNB Chain: $1–3 USD
+
+Polygon: $0.05–1 USD
+
+✅ Paso 3 – Desplegar el contrato
+En Remix:
+
+Selecciona "Injected Web3"
+
+Asegúrate de estar conectado con tu Metamask
+
+Despliega el contrato
+
+Confirma la transacción
+
+Guarda la dirección del contrato desplegado
+
+✅ Paso 4 – Verificar contrato
+Ve a:
+
+https://bscscan.com/verifycontract
+
+https://etherscan.io/verifyContract
+
+Pega tu contrato, nombre, símbolo, compilador
+
+Confirma con tu Metamask
+
+💸 Verificar el contrato es GRATIS
+
+✅ Paso 5 – Agregar liquidez a un DEX (opcional)
+Para permitir trading necesitas agregar liquidez a un DEX:
+
+DEX	Red	Mínimo recomendado
+PancakeSwap	BNB Chain	~50–100 USD en BNB y tokens
+Uniswap	Ethereum / Polygon	~200–500 USD mínimo
+
+Debes:
+
+Aprobar tu token en la DEX
+
+Crear un pool: SWH + BNB (o ETH, MATIC)
+
+Depositar tokens
+
+💰**¿Costo total?**
+
+Aprobar token: $0.30–$3
+
+Crear pool: depende del DEX (~$3–$30)
+
+Liquidez inicial: lo que tú decidas (~$100+ recomendable)
+
+🧾 Resumen de Costos Aproximados
+Item	Costo en Ethereum	Costo en BNB Chain	Costo en Polygon
+Crear wallet	$0	$0	$0
+Compilar contrato	$0	$0	$0
+Desplegar contrato	$60–100	$1–3	$0.05–1
+Verificar contrato	$0	$0	$0
+Agregar liquidez	$200+	$50–100	$30–80
+Dominio web (opcional)	$10–20 / año	—	—
+
+🧭 ¿Qué hacer luego?
+Publicar la web del token
+
+Solicitar listado en DEX y trackers (Dextools, CoinGecko, etc.)
+
+Crear comunidad en Twitter, Telegram, Discord
+
+Iniciar marketing: influencers, anuncios, memes, etc.
+

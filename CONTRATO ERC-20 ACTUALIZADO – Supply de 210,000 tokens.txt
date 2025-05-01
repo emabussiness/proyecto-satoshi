@@ -1,0 +1,57 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
+
+contract SatoshiWasHere is ERC20, Ownable, Pausable {
+    uint256 public transferTax = 200; // 2%
+    address public burnAddress = 0x000000000000000000000000000000000000dEaD;
+
+    constructor() ERC20("SatoshiWasHere", "SWH") {
+        _mint(msg.sender, 210000 * 10 ** decimals()); // supply ajustado
+    }
+
+    function pause() public onlyOwner {
+        _pause();
+    }
+
+    function unpause() public onlyOwner {
+        _unpause();
+    }
+
+    function setTransferTax(uint256 tax) external onlyOwner {
+        require(tax <= 1000, "Max 10%");
+        transferTax = tax;
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
+    function burn(uint256 amount) public {
+        _burn(msg.sender, amount);
+    }
+
+    function burnFrom(address account, uint256 amount) public {
+        _spendAllowance(account, msg.sender, amount);
+        _burn(account, amount);
+    }
+
+    function _beforeTokenTransfer(address from, address to, uint256 amount) internal whenNotPaused override {
+        super._beforeTokenTransfer(from, to, amount);
+    }
+
+    function _transfer(address sender, address recipient, uint256 amount) internal override {
+        if (transferTax > 0 && sender != owner() && recipient != burnAddress) {
+            uint256 taxAmount = (amount * transferTax) / 10000;
+            uint256 sendAmount = amount - taxAmount;
+
+            super._transfer(sender, burnAddress, taxAmount); // se quema
+            super._transfer(sender, recipient, sendAmount);
+        } else {
+            super._transfer(sender, recipient, amount);
+        }
+    }
+}
