@@ -1,0 +1,174 @@
+/* Estilos para SatoshiWasHere ($SWH) - Tema Misterioso */
+
+body {
+    background-color: #0a0a0a; /* Fondo negro oscuro */
+    color: #00ff00; /* Texto verde fosforescente */
+    font-family: 'Special Elite', monospace; /* Fuente tipo máquina de escribir */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #00ff00;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #00ff00;
+    /* Simulación de pixel art simple */
+    text-shadow: 
+        1px 1px 0 #003300,
+        -1px -1px 0 #003300,
+        1px -1px 0 #003300,
+        -1px 1px 0 #003300,
+        0px 1px 0 #003300,
+        1px 0px 0 #003300,
+        0px -1px 0 #003300,
+        -1px 0px 0 #003300;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #00ff00;
+    padding: 5px 10px;
+}
+
+h1 {
+    margin: 10px 0 5px 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #cccccc;
+}
+
+nav {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px dashed #00ff00;
+}
+
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #111;
+    border: 1px solid #003300;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #ffffff;
+}
+
+.token-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #050505;
+    border: 1px dashed #00ff00;
+}
+
+.token-stats h4 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+#contract-address, #transfer-tax, #total-supply, #burned-tokens, #current-tax {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a {
+    color: #33cc33; /* Verde más brillante para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 1px solid #00ff00;
+    font-size: 0.9em;
+}
+
+/* Placeholder para frases ocultas al hacer hover - requiere JS para implementación compleja */
+.hidden-phrase-container {
+    position: relative;
+    cursor: default; /* O un cursor que indique interacción */
+}
+
+.hidden-phrase {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Aparece encima */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00ff00;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.hidden-phrase-container:hover .hidden-phrase {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .logo {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
